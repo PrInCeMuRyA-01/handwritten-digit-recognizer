@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwritten Digit Recognizer (CNN)</title>
+    <!-- Direct link to CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Handwritten Digit Recognizer</h1>
+        <p>Draw a digit (0–9) on the canvas below to test the CNN model.</p>
+
+        <div class="main-content">
+            <div class="canvas-card">
+                <canvas id="paintCanvas" width="280" height="280"></canvas>
+                <div class="button-group">
+                    <button id="clearBtn" class="btn secondary-btn">Clear Canvas</button>
+                    <button id="predictBtn" class="btn primary-btn">Recognize Digit</button>
+                </div>
+            </div>
+
+            <div class="results-card">
+                <h2>Prediction Result</h2>
+                <div class="output-box">
+                    <span id="predictedDigit">-</span>
+                </div>
+                <p class="confidence-text">Confidence: <span id="confidenceVal">-</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Direct link to JS -->
+    <script src="script.js"></script>
+</body>
+</html>
